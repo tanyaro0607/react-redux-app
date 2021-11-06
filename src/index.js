@@ -9,7 +9,6 @@ import {Provider} from 'react-redux'
 import rootReducer from './store/reducers/rootReducer'
 import thunk from 'redux-thunk'
 
-//копия с github
 const composeEnhancers =
   typeof window === 'object' &&
   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
@@ -18,7 +17,7 @@ const composeEnhancers =
 
 
 const store = createStore(
-  rootReducer, //ф-я объединяет все суще-е редьюсеры
+  rootReducer,
   composeEnhancers(
     applyMiddleware(thunk)
   )

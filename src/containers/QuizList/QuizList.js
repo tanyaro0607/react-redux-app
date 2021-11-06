@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import classes from './QuizList.css'
 import {NavLink} from 'react-router-dom'
 import Loader from '../../components/UI/Loader/Loader'
-import { connect } from 'react-redux'
-import {fetchQuizes} from '../../store/actions/quiz'
+import {connect} from 'react-redux'
+import {fetchQuizes} from '../../store/actions/quiz';
 
 class QuizList extends Component {
 
